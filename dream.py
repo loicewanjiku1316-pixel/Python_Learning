@@ -70,13 +70,14 @@ print((Admin or Moderator) and (not is_banned or email is is_verified))
 
 # NB: made a mistake on email is is_verified. 
 # The mistake is that email is a string and is_verified is boolean, IS cannot used to compare string and boolean.
-# Therefore OR should have been used and no need for "email string" since email is non-issue according to the question.
+# Therefore OR should have been used, and no need for "email string" since email is a non-issue according to the question.
 # Correct answer is:
 Admin = True
 Moderator = False
 is_banned = False
 is_verified = True
 print((Admin or Moderator) and (not is_banned or is_verified))
+
 
 
 
